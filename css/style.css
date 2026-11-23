@@ -1,0 +1,467 @@
+/* Global Sytle */
+:root {
+    --main-color: #7F22FE;
+}
+
+* {
+    scroll-padding-top: 50px;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+.primary-color {
+    color: #7F22FE;
+}
+
+.bg-primarys {
+    background-color: var(--main-color);
+}
+.icon-social{
+    background-color: #AC60FD;
+}
+
+.secondary-color {
+    color: #4A5565;
+}
+
+.i-color {
+    color: #99A1AF;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.max-w-500 {
+    width: 550px;
+}
+
+.w-35 {
+    width: 40px;
+}
+
+.w-60 {
+    width: 65px;
+}
+
+
+.w-70 {
+    width: 70%;
+}
+
+.h-35 {
+    height: 40px;
+}
+
+.height-50 {
+    height: 48px;
+}
+
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+
+/* img{
+    width: 65px;
+    
+} */
+
+/* ==================================== */
+/* Start Navbar */
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    width: 70%;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-link {
+    position: relative;
+    width: fit-content;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+
+}
+
+.nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 90%;
+}
+
+.mega-dropdown {
+    position: static;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 65%;
+    right: 0;
+    left: 10rem;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 80%;
+    margin: 0;
+    padding: 30px 0;
+    border: none;
+    /* max-height: 70vh; */
+    border-radius: 0;
+    overflow-y: auto;
+}
+
+.mega-menu .container .inner .bg-villa:hover {
+    background-color: #F9FAFB;
+}
+
+.property li:hover span {
+    color: var(--main-color);
+}
+
+.new-york {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.4), rgba(127, 34, 254, 0.4)), url(../images/new-york.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.new-york:hover {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.3), rgba(127, 34, 254, 0.3)), url(../images/new-york.jpeg);
+}
+
+.new-york span,
+.los-angeles span,
+.miami span {
+    color: #DDD6FF;
+}
+
+.new-york h4,
+.los-angeles h4,
+.miami h4,
+.properties h4,
+.resources h4 {
+    font-size: 1.2rem;
+}
+
+.resources h4 {
+    font-size: 1.1rem;
+}
+
+.los-angeles {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.6), rgba(127, 34, 254, 0.5)), url(../images/los-angeles.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.los-angeles:hover {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.4), rgba(127, 34, 254, 0.8)), url(../images/los-angeles.jpeg);
+
+}
+
+.btn-search {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    border: 0 solid transparent;
+}
+
+.btn-tour {
+    --bs-btn-border-color: transparent;
+    border: 0 solid transparent;
+}
+
+.btn-tour:hover {
+    color: var(--main-color);
+    border-color: unset;
+    border: 0 solid transparent;
+    transition: none;
+}
+
+
+.btn-search:hover {
+    background-color: #550abe;
+    border: 0 solid var(--main-color);
+
+}
+
+.miami {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.4), rgba(127, 34, 254, 0.4)), url(../images/miami.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.miami:hover {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.2), rgba(127, 34, 254, 0.2)), url(../images/miami.jpeg);
+
+}
+
+.resource-card i {
+    font-size: 1.3rem;
+}
+
+.bg-book {
+    background-color: #EDE9FE;
+}
+
+.text-book {
+    color: var(--main-color);
+}
+
+.file-lines {
+    color: #9810FA;
+}
+
+.bg-chart {
+    color: #DBFCE7
+}
+
+.text-chart {
+    color: #00A63E;
+}
+
+.resource-card {
+    cursor: pointer;
+}
+
+.resource-card h4::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: -35px;
+    top: -35px;
+    border-radius: 50%;
+}
+
+.resource-card:nth-of-type(1) h4::after {
+    background-color: #F5F3FF;
+}
+
+.resource-card:nth-of-type(2) h4::after {
+    background-color: #EDFEF2;
+}
+
+.resource-card:nth-of-type(3) h4::after {
+    background-color: #F9F4FF;
+}
+
+.resource-card:nth-of-type(1):hover h4,
+.resource-card:nth-of-type(3):hover h4 {
+    color: var(--main-color);
+}
+
+.resource-card:nth-of-type(2):hover h4 {
+    color: #00A63E;
+}
+
+.resource-card .fa-arrow-right {
+    transition: transform 0.3s;
+}
+
+.resource-card:hover .fa-arrow-right {
+    transform: translateX(5px);
+}
+
+/* End Navbar */
+/* =========================== */
+
+/* Start Hero  */
+header {
+    background-image: linear-gradient(rgba(127, 34, 254, 0.6), rgba(127, 34, 254, 0.6)), url(../images/hero-bg-img.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: fit-content;
+    overflow-y: scroll;
+}
+
+form .fa-location-dot {
+    left: 30px;
+}
+
+/* End Hero  */
+/* ============================ */
+
+/* Start Properties Section */
+.properties-section {
+    max-height: fit-content;
+}
+
+.badge-line {
+    width: 55px;
+    height: 2px;
+    display: inline-block;
+}
+
+.badge-line.left {
+    background: linear-gradient(to right, transparent, var(--main-color));
+}
+
+.badge-line.right {
+    background: linear-gradient(to left, transparent, var(--main-color));
+}
+
+.properties-section h2,
+.services-section h2,
+.faq-section h2 {
+    background: linear-gradient(90deg, #7F22FE 0%, #9810FA 55%, #F59E0B 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.bg-orange {
+    background-color: #F59E0B;
+}
+
+.properties-section {
+    height: max-content;
+}
+
+.properties-section .badge-one {
+    left: 1rem;
+    top: 1rem;
+}
+
+.properties-section .badge-big {
+    right: 2rem;
+    top: 1rem;
+}
+
+.properties-section .photo {
+    bottom: 50%;
+    left: 1rem;
+}
+
+.properties-section .badge-big:hover .fa-heart {
+    color: red;
+    cursor: pointer;
+}
+
+.properties-section .card .image-box {
+    transition: transform 0.4s;
+
+}
+
+.properties-section .card:hover .image-box {
+    transform: scale(1.04);
+
+}
+
+/* End Properties Section */
+/* ============================= */
+
+
+/* Start Services Section */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--main-color);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #F5F3FF;
+}
+
+.nav-pills .nav-link:hover {
+    color: var(--main-color);
+    border-bottom: 0 solid transparent;
+}
+
+.services-section .rate {
+    bottom: -20px;
+    left: -20px;
+}
+
+.services-section .times {
+    bottom: -15px;
+    right: -20px;
+}
+
+/* End Services section */
+/* ======================= */
+
+/* Start Testimonial Section */
+
+.bg-testimonial {
+    background-color: #511896;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #ad81cf;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: unset;
+}
+
+/* End Testimonial section */
+/* ====================================== */
+
+/* Start FAQ Section */
+.accordion-button {
+    color: var(--bs-accordion-btn-color);
+    background-color: var(--bs-accordion-btn-bg);
+}
+
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+}
+
+.accordion {
+    --bs-accordion-transition: color 0s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: white;
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-accordion-btn-color: var(--bs-body-color);
+}
+/* End FAQ Section */
+/* ==================================== *
+
+/* Start Conatct Section */
+.contact-section .square{
+    width: 60px;
+    height: 60px;
+}
+.contact-section .inner{
+    transition: transform 0.5ms ;
+}
+.contact-section .inner:hover{
+    transform: translateY(-10px);
+}
+.contact-section .social:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* End Contact Section */
+/* ===================================== */
